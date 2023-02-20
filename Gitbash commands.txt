@@ -1,0 +1,137 @@
+  HW_terminal 
+
+1) Посмотреть где я:
+   pwd
+
+2) Создать папку:
+   mkdir  (folder name)
+
+3) Зайти в папку:
+   cd (folder name)
+
+4) Создать 3 папки:
+   mkdir (folername1  foldername2  foldename3)
+
+5) Зайти в любую папку:
+   cd (foldername1)
+
+6) Создать 5 файлов:
+   touch  (file_1.txt  file_2.txt  file_3.txt file_4.json  file_5.json)
+
+7) Создать 3 папки:
+   mkdir (dir_1  dir_2  dir_3 )
+
+8) Вывести список содержимого папки:
+   ls -la
+
+9) Открыть любой txt файл:
+   cat (file_1.txt)
+
+10)Написать туда что-нибудь, любой текст:
+   cat >> (file_1.txt)
+
+11)Сохранить и выйти:
+   Нажать Ctrl+C
+
+12)Выйти из папки на уровень выше:
+   cd ..
+
+13)Переместить любые 2 файла, которые вы создали, в любую другую папку:
+   mv folder1/file_1.txt folder1/file_2.txt  folder2
+
+14)Cкопировать любые 2 файла, которые вы создали, в любую другую папку:
+   cp folder2/file_1.txt folder2/file_2.txt  folder3
+
+15)Найти файл по имени:
+   find . -name file.txt
+
+16)Просмотреть содержимое в реальном времени (команда grep) изучите как она работает:
+   Команда grep предназначена для поиска строк
+   grep word file_1.txt
+
+17)Вывести несколько первых строк из текстового файла:
+   head -n2 file_1.txt
+
+18)Вывести несколько последних строк из текстового файла:
+   tail -n2 file_1.txt
+
+19)Посмотреть содержимое файла в реальном времени:
+   tail -f file_1.txt
+
+20)Просмотреть содержимое длинного файла (команда less) изучите как она работает.
+   less заключается в том, что команда не считывает текст полностью,
+   а загружает его небольшими фрагментами и можно читать файл пользуясь для прокручивания
+   строк вперед и назад клавишами Enter и y.
+   less file_1.txt
+21)Вывести дату и время
+   date + %c
+
+22) Отправить http запрос на сервер.
+    http://162.55.220.72:5005/terminal-hw-request 
+        request:
+    curl http://162.55.220.72:5005 -i 
+        response:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    26  100    26    0     0    223      0 --:--:-- --:--:-- --:--:--   224HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 26
+Server: Werkzeug/2.0.1 Python/3.8.10
+Date: Tue, 07 Feb 2023 16:31:26 GMT
+
+Hello!!!!!!!!!195.142.68.1
+
+23) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
+  nano myscript_1.sh
+
+#!/bin/bash
+
+cd group_33
+mkdir dir_1 dir_2 dir_3
+cd dir_1
+touch file1.txt file2.txt file3.txt file1.json file2.json
+mkdir foler1 folder2 folder3
+ls -la
+mv file1.txt file2.txt folder2
+
+24)Vim — это текстовый редактор
+   vim file_4.json 
+   i - для активаций режима редактирования
+
+ {
+        "user_name": "Anna",
+        "User_age": 25,
+        "Salary": 1700,
+        "family":{
+                "person_1":{
+                        "name": "Alex",
+                        "age": 2
+                },
+                "person_2":{
+                        "name":"Barsik",
+                        "age": 2
+                }
+        }
+
+}
+:
+25)Esc+:+wq -сохранить и закрыть текстовый редактор
+
+26)Открыть в графическом интерфейсе:(в текущей директорий)
+   explorer .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
